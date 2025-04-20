@@ -7,43 +7,109 @@
     --grey: #a8a8a5;
   }
   
-  html {
+html {
       box-sizing: border-box;
+      width: 90%;
+      margin: 0 auto;
     }
-    *, *:before, *:after {
+*, *:before, *:after {
       box-sizing: inherit;
     }
   
-  body {
+body {
       font-family: "IBM Plex Sans Condensed", sans-serif;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 200;
       font-size: 2.5em;
       line-height: 1.3em;
       letter-spacing: 1px;
     }
   
-  a {
+a {
     text-decoration: underline;
     color: var(--black);
   }
   
-  ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    float: left;
   }
   
-  img {
+img {
     display: block;
+    max-width: 100%;
   }
-  
-  h1, h2, h3, h4 {
-      font-family: var(--font-sans-serif);
-      font-style: normal;
-      font-weight: 300;
-      font-size: 1.3em;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+   
+h1, h2, h3, h4 {
+    font-family: var(--font-sans-serif);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     }
   
+h1 {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    background-color: lightgray;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    font-weight: 300;
+    background-color: rgb(242, 242, 242);
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+    border: 1px solid var(--grey);
+    padding: 1em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+.component {
+    padding: 2em;
+    padding-left: 2em;
+    overflow: hidden;
+}
+
+
+.component_img {
+    padding-left: 3em;
+}
+
+.component_code{
+    padding-left: 3em;
+}
+
+.component_img > img {
+    border: 1px solid var(--grey);
+    max-width: initial;
+    margin-bottom: 1em;
+}
+
+.component_code > h1 {
+    font-family: var(--font-sans-serif);
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: initial;
+    background-color: initial;
+    padding: initial;
+    float: right;
+}
+

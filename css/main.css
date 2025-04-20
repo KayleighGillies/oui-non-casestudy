@@ -24,6 +24,11 @@ body {
     letter-spacing: 1px;
   }
 
+a {
+  text-decoration: underline;
+  color: var(--black);
+}
+
 ul {
   list-style-type: none;
   margin: 0;

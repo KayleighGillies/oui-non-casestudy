@@ -126,6 +126,7 @@ h4 {
 }
 
 .button {
+    display: inline-block;
     color: var(--white);
     background-color: var(--black);
     text-transform: uppercase;
@@ -140,3 +141,31 @@ input[type=text] {
     border: none;
     border-bottom: 3px solid var(--black);
   }
+
+.card {
+    max-width: 50%;
+}
+
+.card > img {
+    margin: 1.4em;
+    margin-bottom: 0;
+    width: 94%;
+}
+
+.card_text {
+    margin: 0 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card_text {
+    :nth-child(even) {
+        text-align: end;
+    }
+}
+
+.card_text-1, .card_text-2 {
+    text-transform: uppercase;
+}

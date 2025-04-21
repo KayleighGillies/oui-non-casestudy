@@ -19,8 +19,8 @@ html {
 body {
       font-family: "IBM Plex Sans Condensed", sans-serif;
       font-style: normal;
-      font-weight: 200;
-      font-size: 2.5em;
+      font-weight: 300;
+      font-size: 2em;
       line-height: 1.3em;
       letter-spacing: 1px;
     }
@@ -103,7 +103,7 @@ h4 {
 .component_code > h1 {
     font-family: var(--font-sans-serif);
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.3em;
     letter-spacing: 2px;
     text-transform: uppercase;

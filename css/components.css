@@ -25,10 +25,15 @@ body {
       letter-spacing: 1px;
     }
   
-a {
-    text-decoration: underline;
+a:link {
+    text-decoration: none;
     color: var(--black);
   }
+
+a:hover {
+    text-decoration: underline;
+    color: var(--black);
+}
   
 ul {
     list-style-type: none;

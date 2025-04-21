@@ -95,7 +95,7 @@ h4 {
 }
 
 .component_img > img {
-    border: 1px solid var(--grey);
+    border: 1px dashed var(--grey);
     max-width: initial;
     margin-bottom: 1em;
 }
@@ -113,3 +113,23 @@ h4 {
     float: right;
 }
 
+.component_form {
+    color: var(--grey);
+    font-weight: 200;
+}
+
+.button {
+    color: var(--white);
+    background-color: var(--black);
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 1em 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid var(--black);
+  }

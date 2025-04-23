@@ -107,7 +107,7 @@ img {
     padding-left: 3em;
 }
 
-.component_code{
+.component_code {
     padding-left: 3em;
 }
 
@@ -207,4 +207,25 @@ input[type=text] {
     text-transform: uppercase;
 }
 
+.card-hover {
+    display: none;
+    max-width: 100%;
+    border: none !important;
+}
 
+.card-hover > h1 {
+    font-family: var(--font-sans-serif);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: initial;
+    background-color: initial;
+    padding: initial;
+    float: right;
+}
+
+span:hover +  .card-hover {
+    display: block;
+}

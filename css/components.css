@@ -113,8 +113,9 @@ img {
 
 .component_img > img {
     border: 1px dashed var(--grey);
-    max-width: initial;
+    max-width: 90%;
     margin-bottom: 1em;
+
 }
 
 .component_code > h1 {
@@ -177,6 +178,10 @@ input[type=text] {
     padding: 0 1em;
     display: flex;
     justify-content: space-between;
+}
+
+.card_text-left {
+    justify-content: flex-start;
 }
 
 .card_text-right {

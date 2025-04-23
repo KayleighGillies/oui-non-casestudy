@@ -138,8 +138,16 @@ img {
 
 /* buttons */
 
-.button {
+.button-nav_hover {
     display: inline-block;
+    color: var(--white);
+    background-color: var(--black);
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.button-card {
+    display: none;
     color: var(--white);
     background-color: var(--black);
     text-transform: uppercase;
@@ -169,23 +177,29 @@ input[type=text] {
     flex-direction: column;
 }
 
-.card > img {
-    margin-bottom: 0;
+.card_image {
+    padding-bottom: 1em;
+    width: 100%;
 }
 
 .card_text {
     margin: 0;
-    padding: 0 1em;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
+
 .card_text-left {
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .card_text-right {
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .card_text-upper {

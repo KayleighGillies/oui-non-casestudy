@@ -65,14 +65,19 @@ h4 {
 
 /* links */
 
+a:link, a:hover, a:active, a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+}
 
-a:link {
+.link-border_bottom {
     display: inline-block;
     text-decoration: none;
     color: var(--black);
   }
 
-a:hover {
+.link-border_bottom:hover {
     margin: 0;
     border-bottom: 3px solid var(--black);
     color: var(--black);
@@ -171,14 +176,13 @@ input[type=text] {
 
 
 .card {
-    margin: 0;
     max-width: 50%;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .card_image {
-    padding-bottom: 1em;
     width: 100%;
 }
 
@@ -208,7 +212,7 @@ input[type=text] {
 }
 
 .card-hover {
-    display: none;
+    opacity: 0;
     max-width: 100%;
     border: none !important;
 }

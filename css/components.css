@@ -196,7 +196,10 @@ input[type=text] {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border: 1px solid red;
 }
+
+
 
 .card_image {
     width: 100%;
@@ -246,3 +249,9 @@ input[type=text] {
     float: right;
 }
 
+                    /* Header Navigation */
+
+.nav_header {
+    display: flex;
+    justify-content: space-between;
+}

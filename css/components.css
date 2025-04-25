@@ -143,6 +143,27 @@ img {
 
 /* buttons */
 
+button {
+    border: none;
+    background-color: transparent;
+    color: var(--black);
+    font-weight: 200;
+    text-transform: uppercase; 
+}
+
+button .button-active {
+    color: var(--white);
+    background-color: var(--black);
+    text-transform: uppercase;  
+    font-weight: 200;
+}
+
+.button-nav {
+    color: var(--white);
+    background-color: var(--black);
+    font-weight: 200;
+}
+
 .button-nav_hover {
     display: inline-block;
     color: var(--white);
@@ -230,6 +251,3 @@ input[type=text] {
     float: right;
 }
 
-span:hover +  .card-hover {
-    display: block;
-}

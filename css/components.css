@@ -144,40 +144,35 @@ img {
 /* buttons */
 
 button {
+    display: inline-block;
+    padding: 2px;
     border: none;
     background-color: transparent;
     color: var(--black);
     font-weight: 200;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-button .button-active {
-    color: var(--white);
-    background-color: var(--black);
-    text-transform: uppercase;  
-    font-weight: 200;
-}
-
-.button-nav {
-    color: var(--white);
-    background-color: var(--black);
-    font-weight: 200;
-}
-
-.button-nav_hover {
+.button-signup {
     display: inline-block;
-    color: var(--white);
+    padding: 2px;
+    border: none;
     background-color: var(--black);
-    text-transform: uppercase;
+    color: var(--white);
     font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.button-card {
-    display: none;
+.button-active {
     color: var(--white);
-    background-color: var(--black);
-    text-transform: uppercase;
-    font-weight: 200;
+    background-color: var(--black);  
+}
+
+.button-hover {
+    color: var(--white);
+    background-color: var(--grey);
 }
 
 /* forms */

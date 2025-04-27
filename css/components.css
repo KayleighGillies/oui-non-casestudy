@@ -171,6 +171,11 @@ button {
 }
 
 .button-hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.button-hover > a:hover {
     color: var(--white);
     background-color: var(--grey);
 }

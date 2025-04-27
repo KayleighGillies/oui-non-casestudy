@@ -5,6 +5,7 @@
     --white: #fff;
     --white-almost: #fcfcfc;
     --grey: #a8a8a5;
+    --grey-light: #e5e5e5;
   }
   
 html {
@@ -252,11 +253,27 @@ input[type=text] {
     grid-column-start: 2;
     z-index: -1;
 }
+                    /* Product Grid */
+.product_grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.product {
+    background-color: var(--grey-light);
+    aspect-ratio: 4/5;
+}
 
 
-                    /* Header Navigation */
 
-.nav_header {
+
+
+
+                    /* Navigation */
+
+.nav{
     display: flex;
     justify-content: space-between;
 }

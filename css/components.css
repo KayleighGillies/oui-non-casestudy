@@ -239,10 +239,12 @@ input[type=text] {
     text-transform: uppercase;
 }
 
+                                /* hover change opacity */
+
+
 .card-hover_grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat (4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     border: 1px solid red;
 }
 
@@ -253,9 +255,30 @@ input[type=text] {
     border: 2px solid green;
 }
 
+.card_lower-hover {
+    grid-column: span 1;
+}
+
+.hover {
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: opacity;
+    transition-duration: .7s;
+    object-fit: cover;
+    animation: mymove 5s;
+}
+
+@keyframes mymove {
+    50% {opacity: 0;}
+}
+
 .card-lower {
     z-index: -1;
 }
+
+
+
+
                     /* Product Grid */
 .product_grid {
     display: block;

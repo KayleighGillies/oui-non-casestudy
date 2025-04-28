@@ -219,6 +219,7 @@ input[type=text] {
     justify-content: space-between;
     line-height: initial;
     background-color: var(--white);
+    font-size: clamp(1.2rem, 1vw, 1.35rem);
 }
 
 .card_text-left {
@@ -257,15 +258,17 @@ input[type=text] {
 }
                     /* Product Grid */
 .product_grid {
+    display: block;
+    padding: 10rem 2rem;
     width: 100%;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(4, minmax(0px, 1fr));
-    grid-template-rows: repeat(3, minmax(0px, 1fr));
+    column-gap: 2rem;
+    row-gap: 6rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .product {
-    background-color: var(--grey-light);
     aspect-ratio: 4/5;
 }
 

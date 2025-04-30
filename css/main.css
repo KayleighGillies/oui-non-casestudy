@@ -10,6 +10,8 @@
 
 html {
     box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2em;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -19,7 +21,7 @@ body {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 1.7em;
     line-height: 1.3em;
     letter-spacing: 1px;
   }

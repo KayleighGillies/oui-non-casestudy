@@ -18,6 +18,7 @@ html {
   }
 
 body {
+    margin: 0 auto;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -75,6 +76,19 @@ h4 {
 }
 
 
+                  /* Navigation */
+
+.nav {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.wordmark {
+  margin: 0 auto;
+  max-width: ;
+}
+
 /* links */
 
 a:link, a:hover, a:active, a:visited {
@@ -82,6 +96,29 @@ display: inline-block;
 text-decoration: none;
 color: var(--black);
 text-transform: uppercase;
+padding-left: .1rem;
+padding-right: .1rem;
+width: fit-content;
+}
+
+a:hover {
+  color: var(--white);
+  background-color: var(--grey);
+}
+
+a:active {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+
+.link_invisible {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.link_invisible:hover {
+  opacity: 1;
 }
 
 .link-border_bottom {
@@ -106,23 +143,7 @@ ul {
   float: left;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 /* buttons */
-
-button {
-  display: inline-block;
-  padding: 2px;
-  border: none;
-  background-color: transparent;
-  color: var(--black);
-  font-weight: 200;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
 .button-signup {
   display: inline-block;
@@ -135,20 +156,6 @@ button {
   letter-spacing: 1px;
 }
 
-.button-active {
-  color: var(--white);
-  background-color: var(--black);  
-}
-
-.button-hover {
-  color: var(--black);
-  background-color: var(--white);
-}
-
-.button-hover > a:hover {
-  color: var(--white);
-  background-color: var(--grey);
-}
 
 /* forms */
 
@@ -248,7 +255,6 @@ input[type=text] {
 
 
 
-
                   /* Product Grid */
 .product_grid {
   display: block;
@@ -265,12 +271,6 @@ input[type=text] {
   aspect-ratio: 4/5;
 }
 
-
-
-
-                  /* Navigation */
-
-.nav{
-  display: flex;
-  justify-content: space-between;
+.product > img {
+  width: 100%;
 }

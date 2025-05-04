@@ -176,9 +176,15 @@ input[type=text] {
 
 .card_image-lower {
   grid-area: 1 / 1;
+  background-color: var(--white);
+}
+
+.card_image-lower:hover {
+  background-color: var(--white);
 }
 
 .card_image-cover {
+  background-color: transparent;
   grid-area: 1 / 1;
   z-index: 1;
   opacity: 0;
@@ -187,6 +193,7 @@ input[type=text] {
 
 .card_image-cover:hover {
   opacity: 1;
+  background-color: var(--white);
 }
 
 .card_text {

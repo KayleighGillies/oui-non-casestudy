@@ -115,11 +115,15 @@ a:active {
 
 
 .link_invisible {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
 .link_invisible:hover {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
   opacity: 1;
 }
 
@@ -157,6 +161,7 @@ ul {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 
 
 /* forms */

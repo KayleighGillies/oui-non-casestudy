@@ -48,35 +48,6 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
   }
 
-  h1 {
-    margin: 0 auto;
-    padding: 1em;
-    text-align: center;
-    background-color: lightgray;
-    font-size: 2em;
-    font-weight: 400;
-}
-
-h2 {
-    margin: 0 auto;
-    padding: 1em;
-    text-align: center;
-    font-weight: 300;
-    background-color: rgb(242, 242, 242);
-}
-
-h3 {
-    display: inline-block;
-    margin: 0;
-    border: 1px solid var(--grey);
-    padding: 1em;
-}
-
-h4 {
-    font-size: 1em;
-}
-
-
                   /* Navigation */
 
 .nav {
@@ -254,4 +225,23 @@ input[type=text] {
 
 .product > img {
   width: 100%;
+}
+                       /* Information Grid */ 
+
+.information_grid {
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+
+.column_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.information_grid > h3 {
+  position: absolute;
+  right: 0;
 }

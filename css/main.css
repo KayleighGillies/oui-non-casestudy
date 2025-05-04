@@ -6,6 +6,7 @@
   --white: #fff;
   --white-almost: #fcfcfc;
   --grey: #a8a8a5;
+  --grey-light: #cdcdcd;
 }
 
 html {
@@ -22,7 +23,7 @@ body {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 1.7em;
+    font-size: clamp(1.2rem, 1vw, 1.7rem);
     line-height: 1.3em;
     letter-spacing: 1px;
   }
@@ -40,10 +41,11 @@ img {
 }
 
 h1, h2, h3, h4 {
+  margin: 0;
     font-family: var(--font-sans-serif);
     font-style: normal;
     font-weight: 300;
-    font-size: 1.3em;
+    font-size: clamp(1.2rem, 1vw, 1.7rem);
     letter-spacing: 1px;
     text-transform: uppercase;
   }
@@ -133,18 +135,25 @@ ul {
   letter-spacing: 1px;
 }
 
-
+.button_right {
+  width: fit-content;
+  margin-top: 1em;
+  margin-left: auto;
+}
 
 /* forms */
-
+form {
+  display: block;
+}
 
 input[type=text] {
   width: 100%;
-  padding: 1em 0;
+  padding-top: 1.5rem;
+  padding-bottom: .7rem;
   margin: 0;
-  box-sizing: border-box;
   border: none;
-  border-bottom: 3px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  color: var(--grey-light);
 }
 
 
@@ -235,13 +244,17 @@ input[type=text] {
   grid-gap: 2rem;
 }
 
-.column_3 {
+.column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  position: relative;
 }
 
-.information_grid > h3 {
+.section > h3 {
   position: absolute;
   right: 0;
+}
+
+.section {
+  padding: 0 0 2rem 0;
 }

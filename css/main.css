@@ -7,6 +7,7 @@
   --white-almost: #fcfcfc;
   --grey: #a8a8a5;
   --grey-light: #cdcdcd;
+  --green: #038203;
 }
 
 html {
@@ -23,7 +24,7 @@ body {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(1.2rem, 1vw, 1.7rem);
+    font-size: clamp(1.2rem, 1.2vw, 1.7rem);
     line-height: 1.3em;
     letter-spacing: 1px;
   }
@@ -45,9 +46,14 @@ h1, h2, h3, h4 {
     font-family: var(--font-sans-serif);
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(1.2rem, 1vw, 1.7rem);
+    font-size: clamp(1.2rem, 1.3vw, 1.7rem);
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: right;
+  }
+
+  address {
+    font-style: normal;
   }
 
                   /* Navigation */
@@ -66,7 +72,7 @@ h1, h2, h3, h4 {
 
 /* links */
 
-a:link, a:hover, a:active, a:visited {
+a:link, a:hover, a:visited {
 display: inline-block;
 text-decoration: none;
 color: var(--black);
@@ -74,6 +80,11 @@ text-transform: uppercase;
 padding-left: .1rem;
 padding-right: .1rem;
 width: fit-content;
+}
+
+.nav > a:active {
+  color: var(--white);
+  background-color: var(--black);
 }
 
 a:hover {
@@ -85,7 +96,6 @@ a:active {
   color: var(--white);
   background-color: var(--black);
 }
-
 
 .link_invisible {
   background-color: var(--black) !important;
@@ -100,16 +110,19 @@ a:active {
   opacity: 1;
 }
 
-.link-border_bottom {
+.link-border_bottom:link {
 display: inline-block;
 text-decoration: none;
 color: var(--black);
+text-transform: initial;
 }
 
 .link-border_bottom:hover {
 margin: 0;
-border-bottom: 3px solid var(--black);
+border-bottom: 2px solid var(--black);
 color: var(--black);
+background-color: transparent;
+text-transform: none;
 }
 
 /* lists */
@@ -249,12 +262,19 @@ input[type=text] {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 2rem;
+  text-align: justify;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.email_submissions {
+  background-color: transparent !important;
+  color: var(--black)!important;
+  text-transform: lowercase!important;
 }
 
 .section > h3 {
@@ -264,4 +284,9 @@ input[type=text] {
 
 .section {
   padding: 0 0 2rem 0;
+}
+
+.email {
+  color: var(--green) !important;
+  text-transform: lowercase !important;
 }

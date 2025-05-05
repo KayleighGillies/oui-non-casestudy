@@ -79,6 +79,11 @@ nav {
   padding: 1rem 0;
 }
 
+.nav a.active {
+  color: var(--white) !important;
+  background-color: var(--black) !important;
+}
+
 .wordmark {
   margin: 0 auto;
   width: 100%;
@@ -97,19 +102,9 @@ padding-right: .1rem;
 width: fit-content;
 }
 
-.nav > a:active {
-  color: var(--white);
-  background-color: var(--black);
-}
-
 a:hover {
   color: var(--white);
   background-color: var(--grey);
-}
-
-a:active {
-  color: var(--white);
-  background-color: var(--black);
 }
 
 .link_invisible {
